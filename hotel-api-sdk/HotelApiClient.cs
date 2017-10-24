@@ -269,6 +269,8 @@ namespace com.hotelbeds.distribution.hotel_api_sdk
                     client.DefaultRequestHeaders.Add("X-Signature", signature.ToString());
                     client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json; charset=utf-8");
                     client.DefaultRequestHeaders.TryAddWithoutValidation("Accept", "application/json; charset=utf-8");
+                    client.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", "hotel-api-sdk-net");
+
 
                     // GET Method
                     if (path.getHttpMethod() == HttpMethod.Get)

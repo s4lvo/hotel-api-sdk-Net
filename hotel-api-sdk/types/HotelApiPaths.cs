@@ -27,6 +27,10 @@ namespace com.hotelbeds.distribution.hotel_api_sdk.types
                 {
                     versionString = "1.1";
                 }
+                else if (version.version == HotelApiVersion.versions.V1_2)
+                {
+                    versionString = "1.2";
+                }
                 return urlTemplate.Replace("${path}", basePath).Replace("${version}", versionString);
             }            
 
