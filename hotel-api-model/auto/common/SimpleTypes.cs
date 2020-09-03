@@ -44,7 +44,8 @@ namespace com.hotelbeds.distribution.hotel_api_model.auto.common
         public enum BookingStatus
         {
             CONFIRMED,
-            CANCELLED
+            CANCELLED,
+            PRECONFIRMED
         };
 
 
